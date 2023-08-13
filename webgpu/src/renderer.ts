@@ -68,8 +68,8 @@ export class Renderer {
 
   private resizeCanvas(calledFromConstructor = false) {
     const dpr = window.devicePixelRatio || 1;
-    this.canvas.width = this.canvas.clientWidth * dpr;
-    this.canvas.height = this.canvas.clientHeight * dpr;
+    this.canvas.width = Math.floor(this.canvas.clientWidth * dpr);
+    this.canvas.height = Math.floor(this.canvas.clientHeight * dpr);
 
     if (calledFromConstructor) return;
     this.textures.depth.destroy();
