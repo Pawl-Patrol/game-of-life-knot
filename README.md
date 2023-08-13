@@ -1,10 +1,4 @@
-# Knot-GOL
-Game of life on a three-dimensional knot. Rendered with javascript.
+# Manifold GOL
 
-## Visit
-https://pawl-patrol.github.io/game-of-life-knot/ \
-[Scroll] Zoom in and out \
-[Mouse] Move the knot around
-
-## Preview
-![preview](https://i.imgur.com/Qjtr8hc.png)
+Game of life on manifolds. Rendered and computed using WebGPU.
+Check webgpu compatibility [here](https://developer.mozilla.org/en-US/docs/Web/API/WebGPU_API#browser_compatibility).
