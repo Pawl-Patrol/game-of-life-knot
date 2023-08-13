@@ -4,15 +4,27 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
+    <title>Home</title>
+    <link rel="stylesheet" href="/home.css" />
   </head>
   <body>
-    <div class="screen">
-      <div class="container">
-        <canvas id="surface-1"></canvas>
-        <canvas id="surface-2"></canvas>
+    <main>
+      <div class="screen">
+        <h1>Welcome</h1>
+        <span
+          >Old contains the javascript rendering engine I wrote in 2021. WebGPU
+          is a rewrite using the webgpu javascript api. As of now (Aug 2023)
+          webgpu is only available on chromium based browsers.
+        </span>
+        <div class="card-container">
+          <a href="webgpu/" class="card primary">
+            <h5>WebGPU</h5>
+          </a>
+          <a href="old/" class="card secondary">
+            <h5>Old</h5>
+          </a>
+        </div>
       </div>
-    </div>
-    <script type="module" src="/src/index.ts"></script>
+    </main>
   </body>
 </html>
