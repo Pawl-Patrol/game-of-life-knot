@@ -21,7 +21,6 @@ export class Renderer {
   private bindGroupLayouts: ReturnType<Renderer["initBindGroupLayouts"]>;
   private bindGroups: ReturnType<Renderer["initBindGroups"]>;
   private renderConfig: GPURenderPassDescriptor;
-  private ready = false;
 
   constructor(
     private device: GPUDevice,
@@ -45,7 +44,6 @@ export class Renderer {
     this.bindGroups = this.initBindGroups();
     this.renderConfig = this.initRenderConfig();
     this.setupEventListeners();
-    this.ready = true;
   }
 
   get canvas() {
